@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="lightbox2-master/src/css/lightbox.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	
+	<title>Lightbox</title>
+</head>
+<body>
+	<main>
+		<h1>Animals! Drag em'</h1>
+	<div class = "gallery grid">
+
+		<div class="item">
+			<div class="item-content">
+				<a href="images/bear.jpg" data-lightbox="animals"><img  src="images/bear.jpg" alt="Bear"></a>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="item-content">
+				<a href="images/bobcat.jpg" data-lightbox="animals"><img src="images/bobcat.jpg" alt="bobcat"></a>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="item-content">
+				<a href="images/bunny.jpg" data-lightbox="animals"><img src="images/bunny.jpg" alt="bunny"></a>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="item-content">
+				<a href="images/chimp.jpg" data-lightbox="animals"><img src="images/chimp.jpg" alt="chimp"></a>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="item-content">
+				<a href="images/dog.jpeg" data-lightbox="animals"><img src="images/dog.jpeg" alt="dog"></a>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="item-content">
+				<a href="images/duck.jpg" data-lightbox="animals"><img src="images/duck.jpg" alt="duck"></a>
+			</div>	
+		</div>
+
+		<div class="item">
+			<div class="item-content">
+				<a href="images/elephant.jpeg" data-lightbox="animals"><img src="images/elephant.jpeg" alt="elephant"></a>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="item-content">
+				<a href="images/exotic.jpg" data-lightbox="animals"><img src="images/exotic.jpg" alt="exotic"></a>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="item-content">
+				<a href="images/goat.jpg" data-lightbox="animals"><img src="images/goat.jpg" alt="goat"></a>
+			</div>
+		</div>
+		
+	</div>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.6.3/dist/muuri.min.js"></script>
+	<script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
+
+	<script>
+		var grid = new Muuri('.gallery', {dragEnabled: true});
+	</script>
+
+</body>
+</html>
